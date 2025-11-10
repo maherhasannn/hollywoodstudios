@@ -41,7 +41,47 @@
     </script>
     <link href="https://cdn.prod.website-files.com/68f2fc3eb44e4dc5990f72cd/68f2fc3fb44e4dc5990f733e_Bigger%20Fav%201.jpg" rel="shortcut icon" type="image/x-icon" />
     <link href="https://cdn.prod.website-files.com/68f2fc3eb44e4dc5990f72cd/68f2fc3fb44e4dc5990f733d_Bigger%20Fav.jpg" rel="apple-touch-icon" />
-  </head>
+    
+    <style>
+      .poster-scroller-wrap {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        /* Fades out the edges for a seamless look */
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      }
+
+      .poster-scroller-track {
+        display: flex;
+        width: max-content; /* Let the images define the width */
+        animation: scroll 40s linear infinite;
+      }
+      
+      .poster-scroller-track:hover {
+         animation-play-state: paused; /* Pause on hover */
+      }
+
+      .poster-image {
+        height: 400px; /* Set a consistent height */
+        width: 270px;  /* Set a consistent width (approx movie poster ratio) */
+        object-fit: cover; /* Ensures images cover the area without distortion */
+        margin: 0 15px; /* Spacing between posters */
+        border-radius: 8px; /* Optional: rounded corners */
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Optional: soft shadow */
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          /* (270px width + 30px margin) * 6 images = 1800px */
+          transform: translateX(calc(-300px * 6)); 
+        }
+      }
+    </style>
+    </head>
   <body>
     <div id="navbar" class="navbar">
       <div class="divider">
@@ -207,7 +247,7 @@
             </div>
 
             
-            <p id="w-node-_6e3af7fa-72d0-4fb3-bf72-0d38bb42db6b-990f7323" data-w-id="6e3af7fa-72d0-4fb3-bf72-0d38bb42db6b" style="opacity:0;-webkit-transform:translate3d(0, 60%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text---paragraph">&quot;Entertain the People, Save the Planet&quot;</p>
+            <p id="w-node-_6e3af7fa-72d0-4fb3-bf72-0d38bb42db6b-990f7323" data-w-id="6e3af7fa-72d0-4fb3-bf72-0d38bb42db6b" style="opacity:0;-webkit-transform:translate3d(0, 60%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text---paragraph">From idea to red carpet - guided by Al</p>
             <div id="w-node-_15b99367-09fa-c113-90fa-540f0d187a86-990f7323" class="intro-image-container top-margin---medium-space">
               <a href="mailto:info@youremail.com?subject=Hire%20me!" class="team-image _1 w-inline-block" style="background-image: url('images/steven.jpeg');"> 
                 <div class="cursor-button-wrap">
@@ -227,6 +267,8 @@
           </div>
         </div>
       </section>
+
+      
       <section id="work" class="section">
         <div class="container top-margin---medium-space">
           <div class="w-layout-grid grid">
@@ -235,163 +277,39 @@
             </div>
             <div id="w-node-b0c60adf-f72a-7fc7-a8eb-827e4bb5882f-990f7323" class="section-title">
               <div class="dot-decoration"></div>
-              <div>Work</div>
+              <div>Thesis</div>
             </div>
-            <p id="w-node-b0c60adf-f72a-7fc7-a8eb-827e4bb58833-990f7323" class="text---paragraph">I like making movies.</p>
-            <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d1-990f7323" class="top-margin---small-space w-dyn-list">
-              <div data-w-id="7e644815-037a-d051-c851-310fa503f3d2" role="list" class="work-collection-list w-dyn-items">
-                <div data-w-id="7e644815-037a-d051-c851-310fa503f3d3" role="listitem" class="w-dyn-item">
-                  <div class="cursor-container">
-                    <div style="width:0px" class="thumbnail-container">
-                      <div style="background-image:url(&quot;https://cdn.prod.website-files.com/68f2fc3fb44e4dc5990f735c/68f2fc3fb44e4dc5990f7363_65ee41172f08ec79bfdfb022_Free_Stationery_Mockup_2.jpg%20(1).webp&quot;)" class="thumbnail"></div>
-                    </div>
-                  </div>
-                  <a href="" class="work-item w-inline-block">
-                    <div class="w-layout-grid grid">
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d5-990f7323">Lone Survivor</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d6-990f7323" class="hidden-on-mobile">Web design</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d7-990f7323">2013</div>
-                    </div>
-                    <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d8-990f7323" class="work-divider">
-                      <div class="divider-filler"></div>
-                      <div style="-webkit-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="divider-filler---work"></div>
-                    </div>
-                  </a>
-                </div>
-                <div data-w-id="7e644815-037a-d051-c851-310fa503f3d3" role="listitem" class="w-dyn-item">
-                  <div class="cursor-container">
-                    <div style="width:0px" class="thumbnail-container">
-                      <div style="background-image:url(https://hollywood-studios.webflow.io/&quot;https://cdn.prod.website-files.com/68f2fc3fb44e4dc5990f735c/68f2fc3fb44e4dc5990f735f_65ee4169f9067f2f20c739f3_6527b13df9346497a5e46b79_Rectangle%20305.webp&quot;)" class="thumbnail"></div>
-                    </div>
-                  </div>
-                  <!-- <a href="https://hollywood-studios.webflow.io/works/ink-works" class="work-item w-inline-block"> -->
-                    <div class="w-layout-grid grid">
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d5-990f7323">2 Guns</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d6-990f7323" class="hidden-on-mobile">Branding</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d7-990f7323">2024</div>
-                    </div>
-                    <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d8-990f7323" class="work-divider">
-                      <div class="divider-filler"></div>
-                      <div style="-webkit-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="divider-filler---work"></div>
-                    </div>
-                  </a>
-                </div>
-                <div data-w-id="7e644815-037a-d051-c851-310fa503f3d3" role="listitem" class="w-dyn-item">
-                  <div class="cursor-container">
-                    <div style="width:0px" class="thumbnail-container">
-                      <div style="background-image:url(https://hollywood-studios.webflow.io/&quot;https://cdn.prod.website-files.com/68f2fc3fb44e4dc5990f735c/68f2fc3fb44e4dc5990f7369_Rectangle%2057.png&quot;)" class="thumbnail"></div>
-                    </div>
-                  </div>
-                  <!-- <a href="https://hollywood-studios.webflow.io/works/glide-graph" class="work-item w-inline-block"> -->
-                    <div class="w-layout-grid grid">
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d5-990f7323">Gotti</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d6-990f7323" class="hidden-on-mobile">Development</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d7-990f7323">2024</div>
-                    </div>
-                    <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d8-990f7323" class="work-divider">
-                      <div class="divider-filler"></div>
-                      <div style="-webkit-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="divider-filler---work"></div>
-                    </div>
-                  </a>
-                </div>
-                <div data-w-id="7e644815-037a-d051-c851-310fa503f3d3" role="listitem" class="w-dyn-item">
-                  <div class="cursor-container">
-                    <div style="width:0px" class="thumbnail-container">
-                      <div style="background-image:url(https://hollywood-studios.webflow.io/&quot;https://cdn.prod.website-files.com/68f2fc3fb44e4dc5990f735c/68f2fc3fb44e4dc5990f7368_65ee40dd947ca4c9a1b0575d_Free-Hardcover-Book-on-Wooden-Stool-Mockup-1-758x539.jpg.webp&quot;)" class="thumbnail"></div>
-                    </div>
-                  </div>
-                  <!-- <a href="https://hollywood-studios.webflow.io/works/pixel-pod" class="work-item w-inline-block"> -->
-                    <div class="w-layout-grid grid">
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d5-990f7323">The Kids Are All Right</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d6-990f7323" class="hidden-on-mobile">Development</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d7-990f7323">2024</div>
-                    </div>
-                    <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d8-990f7323" class="work-divider">
-                      <div class="divider-filler"></div>
-                      <div style="-webkit-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="divider-filler---work"></div>
-                    </div>
-                  </a>
-                </div>
-                <div data-w-id="7e644815-037a-d051-c851-310fa503f3d3" role="listitem" class="w-dyn-item">
-                  <div class="cursor-container">
-                    <div style="width:0px" class="thumbnail-container">
-                      <div style="background-image:url(&quot;https://cdn.prod.website-files.com/68f2fc3fb44e4dc5990f735c/68f2fc3fb44e4dc5990f7366_65ebf53c3083c7cc4ff36525_65bbb564487243fe15f689e8_6578118391e9abb0c3e23094_Presentation%201%20(1).png&quot;)" class="thumbnail"></div>
-                    </div>
-                  </div>
-                  <!-- <a href="https://hollywood-studios.webflow.io/works/snap-tint" class="work-item w-inline-block"> -->
-                    <div class="w-layout-grid grid">
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d5-990f7323">Inconceivable</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d6-990f7323" class="hidden-on-mobile">Branding</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d7-990f7323">2023</div>
-                    </div>
-                    <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d8-990f7323" class="work-divider">
-                      <div class="divider-filler"></div>
-                      <div style="-webkit-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="divider-filler---work"></div>
-                    </div>
-                  </a>
-                </div>
-                <div data-w-id="7e644815-037a-d051-c851-310fa503f3d3" role="listitem" class="w-dyn-item">
-                  <div class="cursor-container">
-                    <div style="width:0px" class="thumbnail-container">
-                      <div style="background-image:url(&quot;https://cdn.prod.website-files.com/68f2fc3fb44e4dc5990f735c/68f2fc3fb44e4dc5990f7367_65ebe6952fb5321973965835_6444328c5570e34b06067fb9_63e2254bc0b481a80a2b9b86_Frame-61%201%20(1).png&quot;)" class="thumbnail"></div>
-                    </div>
-                  </div>
-                  <!-- <a href="https://hollywood-studios.webflow.io/works/visual-blend" class="work-item w-inline-block"> -->
-                    <div class="w-layout-grid grid">
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d5-990f7323">Aftermath</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d6-990f7323" class="hidden-on-mobile">Branding</div>
-                      <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d7-990f7323">2023</div>
-                    </div>
-                    <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d8-990f7323" class="work-divider">
-                      <div class="divider-filler"></div>
-                      <div style="-webkit-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="divider-filler---work"></div>
-                    </div>
-                  </a>
-                </div>
+            <p id="w-node-b0c60adf-f72a-7fc7-a8eb-827e4bb58833-990f7323" class="text---paragraph">Currently in stealth development, HSI.ai is building next-generation Al tools to empower writers, filmmakers, and producers - streamlining the journey from concept to screen and bridging creativity, data, and opportunity in ways the industry has never seen before.
+              <br>
+              <br>
+              Not just workflow. Strategy. Commerce. Intelligence.
+              <br>
+              <br>
+              The next evolution in filmmaking.</p>
+
+
+            <div id="w-node-_7e644815-037a-d051-c851-310fa503f3d1-990f7323" class="top-margin---small-space poster-scroller-wrap">
+              <div class="poster-scroller-track">
+                <img src="images/lone-survivor.jpeg" alt="Lone Survivor" class="poster-image">
+                <img src="images/2guns.jpeg" alt="2 Guns" class="poster-image">
+                <img src="images/gotti.jpg" alt="Gotti" class="poster-image">
+                <img src="images/thekidsarealright.jpg" alt="The Kids Are All Right" class="poster-image">
+                <img src="images/inconceivable.png" alt="Inconceivable" class="poster-image">
+                <img src="images/aftermath.png" alt="Aftermath" class="poster-image">
+                
+                <img src="images/lone-survivor.jpeg" alt="Lone Survivor" class="poster-image">
+                <img src="images/2guns.jpeg" alt="2 Guns" class="poster-image">
+                <img src="images/gotti.jpg" alt="Gotti" class="poster-image">
+                <img src="images/thekidsarealright.jpg" alt="The Kids Are All Right" class="poster-image">
+                <img src="images/inconceivable.png" alt="Inconceivable" class="poster-image">
+                <img src="images/aftermath.png" alt="Aftermath" class="poster-image">
               </div>
             </div>
-          </div>
+            </div>
         </div>
       </section>
-      <section id="about" class="section">
-        <div class="container top-margin---large-space">
-          <div class="w-layout-grid grid">
-            <div id="w-node-_39e6d1cd-e347-55fd-713a-923f4f172969-990f7323" class="divider">
-              <div class="divider-filler"></div>
-            </div>
-            <div id="w-node-_39e6d1cd-e347-55fd-713a-923f4f17296a-990f7323" class="section-title">
-              <div class="dot-decoration"></div>
-              <div>About us</div>
-            </div>
-            <p id="w-node-_39e6d1cd-e347-55fd-713a-923f4f17296e-990f7323" class="text---paragraph">I’ve been lucky enough to have won some awards and features with my work. This was all made possible through great teamwork with great people.</p>
-            <div id="w-node-_5803b81a-6547-91d0-883c-aebba610f546-990f7323" class="stat-list">
-              <div class="stat-block">
-                <h2 class="text---heading">25</h2>
-                <div>Years of experience</div>
-              </div>
-              <div id="w-node-_27d6b8a6-aae4-e51a-1dea-8b16ccfb835c-990f7323" class="stat-block">
-                <h2 class="text---heading">60</h2>
-                <div>Projects complete</div>
-              </div>
-              <div id="w-node-_2cc37892-a5e8-0fcc-a6d5-e372925904b1-990f7323" class="line-divider">
-                <div class="divider-filler"></div>
-              </div>
-              <div class="stat-block">
-                <h2 class="text---heading">34</h2>
-                <div>Awards received</div>
-              </div>
-              <div class="stat-block">
-                <h2 class="text---heading">01</h2>
-                <div>Happy developer</div>
-              </div>
-              <div id="w-node-_69ce055e-07de-bf52-11a9-063d5b897421-990f7323" class="line-divider">
-                <div class="divider-filler"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="footer">
+
+<section class="footer">
         <div class="container top-margin---extra-large-space">
           <div class="w-layout-grid grid">
             <div id="w-node-a3257827-3808-7553-a661-173643d39b3d-43d39b3a" class="divider">
@@ -401,27 +319,21 @@
             <div id="w-node-a3257827-3808-7553-a661-173643d39b41-43d39b3a" class="fooer-link-list">
               <a data-w-id="f55fe440-544a-c053-2e89-81ff96f90c25" href="https://hollywood-studios.webflow.io/template-info/style-guide" class="link w-inline-block">
                 <div class="main">
-                  <!-- <div>Style guide</div> -->
-                </div>
+                  </div>
                 <div class="clone">
-                  <!-- <div>Style guide</div> -->
-                </div>
+                  </div>
               </a>
               <a data-w-id="f55fe440-544a-c053-2e89-81ff96f90c25" href="https://hollywood-studios.webflow.io/template-info/licenses" class="link w-inline-block">
                 <div class="main">
-                  <!-- <div>Licenses</div> -->
-                </div>
+                  </div>
                 <div class="clone">
-                  <!-- <div>Licenses</div> -->
-                </div>
+                  </div>
               </a>
               <a data-w-id="f55fe440-544a-c053-2e89-81ff96f90c25" href="https://hollywood-studios.webflow.io/template-info/changelog" class="link w-inline-block">
                 <div class="main">
-                  <!-- <div>Changelog</div> -->
-                </div>
+                  </div>
                 <div class="clone">
-                  <!-- <div>Changelog</div.> -->
-                </div>
+                  </div>
               </a>
             </div>
             <a id="w-node-a3257827-3808-7553-a661-173643d39b4b-43d39b3a" data-w-id="a3257827-3808-7553-a661-173643d39b4b" href="index.html#navbar" class="scroll-anchor-link w-inline-block">
